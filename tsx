@@ -6,7 +6,7 @@ const LandingPage: React.FC = () => {
       className="min-h-screen w-full flex items-center justify-center p-4 bg-amber-50/40 relative overflow-hidden select-none"
       style={{
         // Caso queira usar a sua imagem real como fundo total, descomente a linha abaixo e substitua o URL:
-        // backgroundImage: "url('URL_DA_SUA_IMAGEM_AQUI')", backgroundSize: 'cover', backgroundPosition: 'center'
+        // backgroundImage: "url('https://drive.google.com/file/d/19dr4hmuZr1upNKbK35v2Hgbpi-Y5TTXd/view?usp=drive_link')", backgroundSize: 'cover', backgroundPosition: 'center'
       }}
     >
       {/* Efeito Visual de Xadrez Suave (Gingham) no fundo usando CSS */}
