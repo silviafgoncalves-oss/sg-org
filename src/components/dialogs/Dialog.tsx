@@ -1,0 +1,2 @@
+import { ReactNode } from 'react';
+export function Dialog({ title, children, variant='info' }: {title:string;children:ReactNode;variant?:'confirm'|'delete'|'save'|'cancel'|'info'}){return <section role="dialog" aria-modal="true" aria-label={title} className="card rounded-3xl p-6"><p className="text-xs uppercase tracking-[.2em] text-[#9c784e]">{variant}</p><h2 className="mt-2 font-serif text-2xl">{title}</h2><div className="mt-3 text-sm text-[#7c7267]">{children}</div></section>}
