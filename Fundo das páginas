@@ -1,0 +1,46 @@
+import React from 'react';
+
+const LandingPage: React.FC = () => {
+  return (
+    <div 
+      className="min-h-screen w-full flex flex-col items-center justify-center p-4 bg-[#ede4dc] relative overflow-hidden select-none font-serif"
+      style={{
+        // Link aberto e otimizado da sua imagem para carregamento imediato
+        backgroundImage: "url('https://googleusercontent.com')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Camada suave para garantir contraste caso precise de adicionar elementos por cima */}
+      <div className="absolute inset-0 bg-amber-950/5 pointer-events-none" />
+
+      {/* Contentor Principal */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-xl w-full h-full pt-[24vh]">
+        
+        {/* Espaço reservado invisível para manter a proporção com o texto da imagem física */}
+        <div className="h-20 md:h-28 aria-hidden pointer-events-none" />
+
+        {/* Botão de Ação Invisível / Sobreposto */}
+        {/* Este botão cobre a área central permitindo a transição ao clicar em qualquer lado da moldura */}
+        <button 
+          onClick={() => {
+            // Insira aqui a rota ou ação do Lovable ao clicar, ex: navigate('/home')
+            console.log('Navegar para a próxima página do diário');
+          }}
+          className="mt-8 px-10 py-3.5 bg-[#9c784e] hover:bg-[#83633e] text-[#fdfbf7] font-medium tracking-widest text-xs uppercase rounded-full shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer backdrop-blur-[1px] border border-[#ebdccb]/40 animate-fade-in"
+        >
+          Entrar no Diário
+        </button>
+
+      </div>
+
+      {/* Rodapé ou Nota de Direitos opcional no fundo da página */}
+      <div className="absolute bottom-4 left-0 right-0 text-center text-[10px] text-[#9c784e]/60 tracking-wider">
+        © {new Date().getFullYear()} — Escreve a vida que queres viver
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;
