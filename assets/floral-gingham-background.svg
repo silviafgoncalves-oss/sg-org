@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <rect width="800" height="800" fill="#fbfaf7"/>
+  <g opacity=".34">
+    <rect y="390" width="800" height="410" fill="#e8ded4"/>
+    <pattern id="gingham" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="80" height="80" fill="#fbfaf7"/>
+      <rect width="40" height="80" fill="#ded2c7" opacity=".55"/>
+      <rect width="80" height="40" fill="#ded2c7" opacity=".55"/>
+    </pattern>
+    <rect y="390" width="800" height="410" fill="url(#gingham)"/>
+  </g>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".78">
+    <g id="sprig">
+      <path d="M0 12c12-7 21-15 28-27" stroke="#9c978c" stroke-width="3"/>
+      <path d="M13 4c-8-5-16-3-22 4 9 3 16 1 22-4Zm12-14c-1-9 4-15 13-19 2 10-3 17-13 19Z" fill="#9c978c" stroke="none"/>
+    </g>
+    <g id="flower" stroke="none">
+      <circle r="14" fill="var(--c,#c59b42)"/>
+      <circle cy="-13" r="12" fill="var(--c,#c59b42)"/><circle cx="12" cy="-4" r="12" fill="var(--c,#c59b42)"/><circle cx="8" cy="11" r="12" fill="var(--c,#c59b42)"/><circle cx="-8" cy="11" r="12" fill="var(--c,#c59b42)"/><circle cx="-12" cy="-4" r="12" fill="var(--c,#c59b42)"/>
+      <circle r="4" fill="#fffaf0"/>
+    </g>
+    <use href="#flower" x="80" y="70" style="--c:#c79a3e" transform="scale(.55)"/>
+    <use href="#flower" x="210" y="120" style="--c:#6f879e" transform="scale(.5)"/>
+    <use href="#flower" x="390" y="82" style="--c:#d8d0c6" transform="scale(.45)"/>
+    <use href="#flower" x="560" y="66" style="--c:#c79a3e" transform="scale(.42)"/>
+    <use href="#flower" x="690" y="145" style="--c:#6f879e" transform="scale(.48)"/>
+    <use href="#flower" x="120" y="260" style="--c:#d28763" transform="scale(.42)"/>
+    <use href="#flower" x="300" y="240" style="--c:#c79a3e" transform="scale(.38)"/>
+    <use href="#flower" x="480" y="225" style="--c:#d8d0c6" transform="scale(.52)"/>
+    <use href="#flower" x="650" y="300" style="--c:#d28763" transform="scale(.4)"/>
+    <use href="#flower" x="110" y="500" style="--c:#c79a3e" transform="scale(.36)"/>
+    <use href="#flower" x="330" y="455" style="--c:#6f879e" transform="scale(.35)"/>
+    <use href="#flower" x="520" y="520" style="--c:#d28763" transform="scale(.34)"/>
+    <use href="#flower" x="715" y="470" style="--c:#c79a3e" transform="scale(.32)"/>
+    <use href="#sprig" x="145" y="155" transform="rotate(-25 145 155)"/>
+    <use href="#sprig" x="585" y="175" transform="rotate(20 585 175)"/>
+    <use href="#sprig" x="245" y="360" transform="rotate(45 245 360)"/>
+    <use href="#sprig" x="705" y="620" transform="rotate(-40 705 620)"/>
+  </g>
+</svg>

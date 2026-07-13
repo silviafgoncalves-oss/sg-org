@@ -5,24 +5,13 @@ const LandingPage: React.FC = () => {
     <div 
       className="min-h-screen w-full flex items-center justify-center p-4 bg-amber-50/40 relative overflow-hidden select-none"
       style={{
-        // Caso queira usar a sua imagem real como fundo total, descomente a linha abaixo e substitua o URL:
-        // backgroundImage: "url('https://drive.google.com/file/d/19dr4hmuZr1upNKbK35v2Hgbpi-Y5TTXd/view?usp=drive_link')", backgroundSize: 'cover', backgroundPosition: 'center'
+        backgroundImage: "url('/assets/landing-cover.svg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      {/* Efeito Visual de Xadrez Suave (Gingham) no fundo usando CSS */}
-      <div 
-        className="absolute inset-0 opacity-15 pointer-events-none"
-        style={{
-          backgroundImage: `
-            linear-gradient(90deg, rgba(197, 160, 119, 0.2) 50%, transparent 50%),
-            linear-gradient(rgba(197, 160, 119, 0.2) 50%, transparent 50%)
-          `,
-          backgroundSize: '40px 40px'
-        }}
-      />
-
-      {/* Padrão de mini flores decorativas abstratas em segundo plano */}
-      <div className="absolute inset-0 opacity-25 pointer-events-none bg-[radial-gradient(#c5a077_1px,transparent_1px)] [background-size:24px_24px]" />
+      {/* Fundo fornecido pela marca: flores, xadrez suave e textura clara. */}
+      <div className="absolute inset-0 bg-[#fdfbf7]/10 pointer-events-none" />
 
       {/* Cartão Central Elegante (Painel Moldurado) */}
       <div className="relative max-w-xl w-full bg-[#fdfbf7] rounded-[40px] shadow-[0_12px_40px_rgba(197,160,119,0.15)] border border-[#ebdccb] p-8 md:p-14 text-center border-double outline outline-1 outline-offset-[-12px] outline-[#ebdccb]/60 flex flex-col items-center justify-center transition-all duration-300 hover:shadow-[0_16px_50px_rgba(197,160,119,0.25)]">
@@ -31,13 +20,12 @@ const LandingPage: React.FC = () => {
         <div className="absolute top-4 text-[#c5a077] text-xs opacity-60">❖ ❖ ❖</div>
 
         {/* Monograma / Logótipo Central */}
-        <div className="mb-6 relative w-36 h-36 flex items-center justify-center border-4 border-double border-[#c5a077]/60 rounded-full bg-[#fbf8f3] shadow-inner">
-          {/* Se tiver a imagem recortada do monograma "SG", substitua a tag abaixo por uma <img src="..." /> */}
-          <span className="font-serif text-4xl text-[#9c784e] tracking-tight italic font-bold">
-            SG
-          </span>
-          {/* Ramos decorativos circulares em CSS em redor do texto */}
-          <div className="absolute inset-2 border border-dashed border-[#c5a077]/40 rounded-full pointer-events-none" />
+        <div className="mb-6 relative w-40 h-32 flex items-center justify-center">
+          <img
+            src="/assets/sg-monogram.svg"
+            alt="Monograma SG"
+            className="h-full w-full object-contain drop-shadow-[0_2px_3px_rgba(124,84,42,0.18)]"
+          />
         </div>
 
         {/* Divisor Elegante Superior */}

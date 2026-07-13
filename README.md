@@ -15,7 +15,7 @@ export default function Index() {
       {/* Imagem de Fundo Subtil / Textura de Papel Premium */}
       <div 
         className="absolute inset-0 pointer-events-none opacity-40 mix-blend-multiply bg-cover bg-center"
-        style={{ backgroundImage: "url('/assets/background.png')" }} 
+        style={{ backgroundImage: "url('/assets/floral-gingham-background.svg')" }}
       />
 
       {/* Header Minimalista */}
@@ -27,7 +27,7 @@ export default function Index() {
           className="flex items-center gap-3"
         >
           {/* Monograma Obrigatório */}
-          <img src="/assets/monogram.svg" alt="SG" className="w-8 h-8" />
+          <img src="/assets/sg-monogram.svg" alt="SG" className="w-8 h-8" />
           <span className="text-xs tracking-[0.2em] uppercase font-light text-[#7C7267]">
             SG-Org
           </span>
