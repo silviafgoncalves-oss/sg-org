@@ -1,0 +1,8 @@
+import { WifiOff, SearchX, FileText, CalendarX, ShieldAlert, AlertTriangle, Lock } from 'lucide-react';
+
+type StateKind = 'tasks'|'events'|'notes'|'results'|'offline'|'unexpected'|'network'|'notFound'|'invalidSession'|'forbidden';
+const copy: Record<StateKind, {title:string;message:string;icon: typeof FileText}> = {
+ tasks:{title:'Sem tarefas',message:'As próximas tarefas irão aparecer aqui.',icon:FileText}, events:{title:'Sem eventos',message:'Os próximos eventos irão aparecer aqui.',icon:CalendarX}, notes:{title:'Sem notas',message:'As notas recentes irão aparecer aqui.',icon:FileText}, results:{title:'Sem resultados',message:'Tente ajustar a pesquisa.',icon:SearchX}, offline:{title:'Sem ligação',message:'Verifique a ligação à internet.',icon:WifiOff}, unexpected:{title:'Algo correu mal',message:'Tente novamente dentro de instantes.',icon:AlertTriangle}, network:{title:'Erro de rede',message:'Não foi possível atualizar a informação.',icon:WifiOff}, notFound:{title:'Página inexistente',message:'A página pedida não existe.',icon:SearchX}, invalidSession:{title:'Sessão inválida',message:'Inicie sessão novamente para continuar.',icon:Lock}, forbidden:{title:'Permissões insuficientes',message:'Não tem acesso a esta área.',icon:ShieldAlert}
+};
+export function EmptyState({ kind }: { kind: StateKind }) { const s=copy[kind], Icon=s.icon; return <section className="card rounded-3xl p-6 text-center" role="status"><Icon className="mx-auto mb-3 text-[#9c784e]" aria-hidden/><h2 className="font-serif text-xl">{s.title}</h2><p className="mt-2 text-sm text-[#7c7267]">{s.message}</p></section>; }
+export const ErrorState = EmptyState;
