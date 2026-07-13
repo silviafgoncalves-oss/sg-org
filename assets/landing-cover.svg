@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1262" height="1262" viewBox="0 0 1262 1262">
+  <image href="floral-gingham-background.svg" width="1262" height="1262" preserveAspectRatio="xMidYMid slice"/>
+  <path d="M322 400C385 245 877 245 940 400c95 22 183 121 128 257 85 127-6 255-155 274-58 142-506 142-564 0-149-19-240-147-155-274-55-136 33-235 128-257Z" fill="#fbf6ec" stroke="#e0d4c0" stroke-width="8"/>
+  <image href="sg-monogram.svg" x="421" y="286" width="420" height="330"/>
+  <g fill="none" stroke="#c59b42" stroke-width="2" opacity=".75"><path d="M465 678h110M687 678h110M465 966h110M687 966h110"/><circle cx="631" cy="678" r="11" fill="#d4ad5f" stroke="none"/><circle cx="631" cy="966" r="11" fill="#d4ad5f" stroke="none"/></g>
+  <text x="631" y="795" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="#76542f">Escreve a vida</text>
+  <text x="631" y="920" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="#76542f">que queres viver</text>
+</svg>

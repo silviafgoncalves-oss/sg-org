@@ -5,8 +5,8 @@ const LandingPage: React.FC = () => {
     <div 
       className="min-h-screen w-full flex flex-col items-center justify-center p-4 bg-[#ede4dc] relative overflow-hidden select-none font-serif"
       style={{
-        // Link aberto e otimizado da sua imagem para carregamento imediato
-        backgroundImage: "url('https://googleusercontent.com')",
+        // Fundo floral/xadrez fornecido para as páginas internas.
+        backgroundImage: "url('/assets/floral-gingham-background.svg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
